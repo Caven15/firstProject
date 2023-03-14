@@ -1,0 +1,18 @@
+<h4>Affichage du nom en uppercase :</h4>
+<p>Avant = {{nom}}</p>
+<p>Après = {{nom | uppercase}}</p>
+
+<h4>Affichage format date :</h4>
+<p>Avant = {{dateNaissance}}</p>
+<p>Après = {{dateNaissance | date : 'dd/MM/YYYY'}}</p>
+
+<h4>Affichage de la somme :</h4>
+<p>Avant = {{somme}}</p>
+<p>Après  = {{somme | currency : 'EUR'}}</p>
+<p>Après = {{somme | currency : 'USD'}}</p>
+
+<h4>Affichage temperature : </h4>
+<p>Température en degré : {{temperatureDeg}}</p>
+<p>Température en Fahrenheit : {{temperatureFahr}}</p>
+<p>degré to fahrenheit => {{temperatureDeg | degToFahr}}</p>
+<p>fahrenheit To degré => {{temperatureFahr | fahrToDeg}}</p>
