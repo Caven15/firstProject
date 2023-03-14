@@ -14,6 +14,8 @@ import { PipesComponent } from './components/Demos/pipes/pipes.component';
 import { DegToFahrPipe } from './shared/customPipes/deg-to-fahr.pipe';
 import { FahrToDegPipe } from './shared/customPipes/fahr-to-deg.pipe';
 import { ChronoComponent } from './components/exercices/chrono/chrono.component';
+import { NotFoundComponent } from './components/Home/not-found/not-found.component';
+import { DirectivesComponent } from './components/Demos/directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { ChronoComponent } from './components/exercices/chrono/chrono.component'
     DegToFahrPipe,
     FahrToDegPipe,
     ChronoComponent,
+    NotFoundComponent,
+    DirectivesComponent,
 
   ],
   imports: [

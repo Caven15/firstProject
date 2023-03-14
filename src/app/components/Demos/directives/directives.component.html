@@ -1,0 +1,41 @@
+<!-- ng if -->
+<h1>Ng if / else</h1>
+<div>
+  <h3 *ngIf="estOuvert">Je suis ouvert</h3>
+  <h3 *ngIf="!estOuvert">Je suis fermer</h3>
+</div>
+
+<!-- ng if/else -->
+<div>
+  <h3 *ngIf="estOuvert ; else estFermer">Je suis ouvert</h3>
+  <ng-template #estFermer>
+    <h3>Je suis fermer</h3>
+  </ng-template>
+</div>
+
+<button type="button" (click)="inversion()">Click pour changer l'état d'ouverture</button>
+
+<hr>
+<h1>Ng for</h1>
+<h3>Liste Fruit(s)</h3>
+<ul *ngFor="let item of listeDonnee">
+  <li>{{item}}</li>
+</ul>
+
+<h2>Section title</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Nom</th>
+        <th scope="col">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of ListeUtilisateurs">
+        <td>{{item.nom}}</td>
+        <td>{{item.role}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,1 +1,7 @@
-<p>chrono works!</p>
+<div>
+  <input type="button" value="Start" (click)="start()" [disabled]="isActive">
+  <input type="button" value="Pause" (click)="pause()" [disabled]="!isActive">
+  <input type="button" value="Reset" (click)="reset()">
+</div>
+
+<p>{{minute}} Minute(s) {{seconde}} Seconde(s)</p>
